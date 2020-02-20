@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200, user-scalable=no, target-densitydpi=device-dpi">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>泡泡星导航 - 向日葵专用</title>
+  <link rel="stylesheet" href="joesky.css">
+  <link rel="stylesheet" href="video-js.css">
+</head>
+<body onload="init()">
+  <div id="pg1">
+    <div id="daohang">
+      <button type="button" onclick="window.open('http://tieba.baidu.com/f?kw=陈乔恩')">百度恩吧</button>
+      <button type="button" onclick="window.open('https://weibo.com/chenchiaoen')">乔恩微博</button>
+      <button type="button" onclick="window.open('https://weibo.com/p/100808fa071ba82508c77a0cc18b0afe51ccf5/super_index')">乔恩超话</button>
+      <button type="button" onclick="window.open('https://weibo.com')">我的微博</button>
+      <button type="button" onclick="window.open('https://chart.weibo.com')">明星势力榜</button>
+      <button type="button" onclick="window.open('https://www.so.com/s?q=陈乔恩')">360搜索</button>
+      <button type="button" onclick="window.open('https://wap.sogou.com/web/searchList.jsp?keyword=陈乔恩')">搜狗搜索</button>
+      <button type="button" onclick="window.open('https://pan.baidu.com')">百度云</button>
+    </div>
+    <div id="search">
+      <form target="_blank" action="https://www.baidu.com/s">
+        <input type="text" placeholder="百度一下，你就知道" name="wd">
+      </form>
+    </div>
+    <canvas id="canvas" width="1920" height="885"></canvas>
+    <audio id="music" autoplay loop><source src="music.mp3"  type="audio/mpeg"></audio>
+    <div id="tsj" title="暂停音乐" onclick="playPause()"></div>    
+  </div>
+  <div id="pg2">
+    <video class="video-js" controls loop poster="pg2.jpg" data-setup="{}">
+      <source src="https://gslb.miaopai.com/stream/wO2kMSl-YMbmYuDFugXtw6lo17oYxdCAcQNDqg__.mp4" type='video/mp4'>
+    </video>
+  </div>    
+  <div id="pg3"></div>
+  <script src="video.js"></script>
+  <script src="easeljs-0.7.1.min.js"></script>
+  <script src="tweenjs-0.5.1.min.js"></script>
+  <script src="movieclip-0.7.1.min.js"></script>
+  <script src="preloadjs-0.4.1.min.js"></script>
+  <script src="flower.js"></script>
+  <script>
+    function playPause() 
+    {
+      var music = document.getElementById("music");
+      var tsj = document.getElementById("tsj");
+      if(music.paused) { music.play(); tsj.style.background="url('tsjoff.gif')"; tsj.title="暂停音乐"; }
+      else { music.pause(); tsj.style.background="url('tsjon.gif')"; tsj.title="播放音乐"; }
+    }
+  </script>
+</body>
+</html>

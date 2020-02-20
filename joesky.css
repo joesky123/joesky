@@ -1,0 +1,26 @@
+﻿* { margin:0; padding:0; }
+
+body { background:url("bg.jpg"); font-family:'Segoe UI', Helvetica, Arial, sans-serif; text-align:center; } 
+   
+  #pg1 { background:url("pg1.jpg"); width:1200px; height:750px; margin:0 auto; }
+
+    #daohang { height:37px; text-align:left; padding-top: 7px; margin-left:5px; }
+     
+      #daohang button { background:none;  padding:5px;  border:0; color:white; font-size:20px; }   
+ 
+        #daohang button:hover { color:yellow; }   
+
+    #search { height:35px; text-align:right; margin:-36px 10px 0 0; }
+    
+      #search input { width:330px; padding:3px 5px; border:1px solid; border-radius:3px; font-size:20px; }
+
+        #search input:focus { border:1px solid yellow; }         
+
+    #canvas { height:553px; margin-top:10px; }    
+  
+    #tsj { background:url("tsjoff.gif");  width:150px; height:150px; float:right; margin:-11px 5px 0 0; }
+
+  #pg2 { width:1200px; height: 675px; margin:0 auto; }
+      
+  #pg3 { background:url("pg3.gif"); width:1200px; height:631px; margin:0 auto; }
+
